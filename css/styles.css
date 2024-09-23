@@ -476,13 +476,85 @@ img {
   color: var(--cloud);
 }
 
+.sub-title {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: var(--white);
+}
+
+.form-sub {
+  margin-top: 16px;
+}
+
+.subscribe-wrap {
+  margin-left: auto;
+}
+
+.second-sub-wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.sub-input {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  padding-left: 5px;
+  border: 1px solid var(--white);
+  background-color: transparent;
+  outline: none;
+  color: var(--cloud);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.sub-input::placeholder {
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.48px;
+  color: var(--white);
+}
+
+.btn-sub {
+  position: relative;
+  width: 165px;
+  height: 40px;
+  border-radius: 4px;
+  padding: 8px 64px 8px 24px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  color: var(--white);
+  background-color: var(--iris);
+  border: none;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-sub:hover,
+.btn-sub:focus {
+  background-color: var(--ocean);
+}
+
+.sub-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 24px;
+  fill: var(--white);
+}
+
 /*---------- Modal ----------*/
 
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -513,13 +585,28 @@ img {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  fill: var(--cornflower);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon {
   fill: var(--navy-blue);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn-modal:hover,
+.close-btn-modal:focus {
+  background-color: var(--ocean);
+}
+
+.close-btn-modal:hover .close-icon,
+.close-btn-modal:focus .close-icon {
+  fill: var(--white);
 }
 
 .modal-title {
@@ -609,6 +696,14 @@ img {
   cursor: pointer;
   background-color: var(--iris);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  background-color: var(--ocean);
 }
 
 .privacy-text {
@@ -625,6 +720,14 @@ img {
 .privacy-link {
   margin-left: 4px;
   color: var(--iris);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.privacy-link:hover,
+.privacy-link:focus {
+  color: var(--ocean);
 }
 
 .icon-confirm-wrap {
