@@ -489,8 +489,8 @@ img {
   width: 100%;
   height: 100%;
   z-index: 999;
-  opacity: 1;
-  pointer-events: auto;
+  opacity: 0;
+  pointer-events: none;
   background-color: var(--navy-blue-modal);
 }
 
@@ -551,6 +551,17 @@ img {
   border-radius: 4px;
   padding-left: 38px;
   border: 1px solid var(--navy-blue-modal);
+}
+
+.input-modal:focus,
+.text-modal:focus {
+  border-color: var(--iris);
+  outline: none;
+  fill: var(--iris);
+}
+
+.input-modal:focus + .input-icon {
+  fill: var(--iris);
 }
 
 .input-icon {
@@ -645,4 +656,9 @@ img {
   background-color: var(--ocean);
   fill: var(--cloud);
   border-color: var(--ocean);
+}
+
+.is-open {
+  opacity: 1;
+  pointer-events: auto;
 }
