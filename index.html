@@ -600,6 +600,7 @@
               <input
                 class="sub-input"
                 name="email-sub"
+                id="email-sub"
                 type="text"
                 placeholder="E-mail"
                 autocomplete="off"
@@ -616,21 +617,21 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal">
         <button class="close-btn-modal" type="button">
-          <svg class="close-icon" width="8px" height="8px">
+          <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h4 class="modal-title">
-          Leave your contacts and we will call you back
-        </h4>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
         <form>
-          <label class="label-modal"
-            >Name
+          <div>
+            <label for="user-name" class="label-modal">Name </label>
             <div class="input-wrap">
               <input
+                name="user-name"
+                id="user-name"
                 class="input-modal"
                 type="text"
                 autofocus
@@ -640,11 +641,15 @@
               <svg class="input-icon" width="18px" height="24px">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
-            </div> </label
-          ><label class="label-modal"
-            >Phone
+            </div>
+          </div>
+
+          <div>
+            <label for="user-phone" class="label-modal">Phone </label>
             <div class="input-wrap">
               <input
+                id="user-phone"
+                name="user-phone"
                 class="input-modal"
                 type="tel"
                 autocomplete="off"
@@ -652,11 +657,16 @@
               />
               <svg class="input-icon" width="18px" height="24px">
                 <use href="./images/icons.svg#icon-phone"></use>
-              </svg></div></label
-          ><label class="label-modal"
-            >Email
+              </svg>
+            </div>
+          </div>
+
+          <div>
+            <label for="user-email" class="label-modal">Email </label>
             <div class="input-wrap">
               <input
+                name="user-email"
+                id="user-email"
                 class="input-modal"
                 type="text"
                 autocomplete="off"
@@ -664,17 +674,19 @@
               />
               <svg class="input-icon" width="18px" height="24px">
                 <use href="./images/icons.svg#icon-email"></use>
-              </svg></div
-          ></label>
-          <label class="label-modal"
-            >Comment
+              </svg>
+            </div>
+          </div>
+
+          <div>
+            <label for="user-comment" class="label-modal">Comment </label>
             <textarea
               class="text-modal"
-              name=""
-              id=""
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
-          </label>
+          </div>
           <input
             class="fake-confirm-inp is-hidden"
             type="checkbox"
