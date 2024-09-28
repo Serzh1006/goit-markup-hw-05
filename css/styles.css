@@ -774,13 +774,13 @@ img {
 }
 
 .icon-confirm-wrap {
-  display: inline-flex;
   position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  align-items: center;
-  justify-content: center;
   width: 16px;
   height: 16px;
   margin-right: 8px;
