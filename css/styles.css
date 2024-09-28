@@ -775,7 +775,7 @@ img {
 
 .icon-confirm-wrap {
   position: absolute;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   top: 50%;
