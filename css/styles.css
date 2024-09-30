@@ -749,10 +749,6 @@ img {
 }
 
 .privacy-text {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -774,10 +770,6 @@ img {
 }
 
 .icon-confirm-wrap {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
   display: inline-flex;
   align-items: center;
   justify-content: center;
